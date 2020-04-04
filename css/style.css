@@ -21,6 +21,62 @@ a {
 
 /*menu*/
 
+nav {
+    background-color: black;
+    padding: 20px;
+    height: 35px;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav ul {
+    height: auto;
+    padding: 8px 0;
+    margin: 0px;
+}
+
+nav li {
+    display: inline;
+    padding: 10px;
+    margin: 0;
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+}
+
+nav a:hover {
+    color: black;
+    background-color: #ccc;
+    border: 2px solid green;
+}
+
+nav a:visited {
+    color: white;
+}
+
+@media all and(min-width:960px) {
+    body {
+        display: block;
+        width: 960px;
+        margin: auto;
+    }
+}
+
+@media all and (max-width: 480px) {
+    nav {
+        width: 100%;
+    }
+    nav li {
+        padding: 10px;
+        margin: 0;
+    }
+}
+
 
 /*design da pagina*/
 
@@ -29,11 +85,18 @@ body {
     height: 100% auto;
 }
 
+header {
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
 section {
     background-color: #fff;
-    padding: 10px;
-    margin: 20px;
-    padding: 30px;
+    margin: 25px;
+    padding: 100px;
 }
 
 footer {
@@ -46,4 +109,5 @@ footer p {
     font-family: verdana;
     text-align: center;
     font-size: 12px;
+    font-weight: bold;
 }
